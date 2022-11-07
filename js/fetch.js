@@ -95,10 +95,14 @@ async function genericFocusedTime() {
             
             // Check if current time lies between startTime and endTime
             if (dt0 >= dt1 && dt0 <= dt2) {
-                var nextJson = timeTable[i + 1]
-                var nextPeriod = nextJson.period;
-                var n_s = nextJson.startTime.split(':')
-                var dtnx = new Date(dt0.getFullYear(), dt0.getMonth(), dt0.getDate(), parseInt(n_s[0]), parseInt(n_s[1]), parseInt(n_s[2]))
+                try {
+                    var nextJson = timeTable[i + 1]
+                    var nextPeriod = nextJson.period;
+                    var n_s = nextJson.startTime.split(':')
+                    var dtnx = new Date(dt0.getFullYear(), dt0.getMonth(), dt0.getDate(), parseInt(n_s[0]), parseInt(n_s[1]), parseInt(n_s[2]))
+                } catch (e) {
+                    document.getElementById('focusTimeNext').style.display = "none";
+                }
 
                 var dtnx_12 = dtnx.toLocaleString("default")
                 var dtnx_12_remspace = dtnx_12.split(',')
