@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./img/alarm-clock_23f0.png"/>
+    <link rel="stylesheet" href="./css/index.css"><link rel="stylesheet" href="./css/focus.css"><link rel="stylesheet" href="./css/stickies.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Timely | Home</title>
+</head>
+<body>
+    <script src="./js/time.js"></script>
+    <!-- <script src="./js/login.js"></script> -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class="stickiesTitle">Stickies<br><desc>Write anything below and you can see it later!</desc></div>
+        <textarea type="text" name="sticky" placeholder="Type anything!" id="stickyTextArea"></textarea>
+        <div class="stickiesSave"><button onclick="saveToLocalStorage()" id="stickiesSaveButton">Save</button></div>
+        <script>
+            function delay(time) {
+                return new Promise(resolve => setTimeout(resolve, time));
+            }
+
+            async function saveToLocalStorage() {
+                var text = document.getElementById('stickyTextArea').value;
+                localStorage.setItem("stickyText", text);
+                document.getElementById('stickiesSaveButton').disabled = true;
+                document.getElementById('stickiesSaveButton').style.backgroundColor = "rgb(255, 255, 255)"
+                await delay(150)
+                document.getElementById('stickiesSaveButton').disabled = false;
+                document.getElementById('stickiesSaveButton').style.backgroundColor = "rgba(255, 255, 255, 0.776)"
+            }
+
+            
+        </script>
+      </div>
+    <div class="contains-title-time">
+        <div class="text-center title gradient animate__animated animate__slideInDown">Timely</div>
+        <div class="text-center time gradient animate__animated animate__slideInDown" id="time">Loading...</div>
+    </div>
+    <div class="items-container">
+        <div class="focusTime">
+            <div class="focusTimeNow animate__animated animate__slideInRight" id="focusTimeNow">
+                <id class="focusTimeOverlay"></id>
+                <id class="focusTimePeriod" id="genericFocusTimePeriod">Now: Period #</id><br>
+                <id class="focusTimeMain" id="genericFocusTimeMain">N/A</id><id class="focusTimeMain" id="remaining"> remaining</id><br>
+                <id class="focusTimeEnds" id="endsText">Ends </id><id class="focusTimeEnds" id="genericFocusTimeEnds">#</id><br><br><br>
+            </div>
+            <div class="focusTimeNext animate__animated animate__slideInLeft" id="focusTimeNext">
+                <id class="focusTimeNextOverlay" id="focusTimeNextOverlay"></id>
+                <id class="focusTimeNextPeriod" id="genericFocusTimeNextPeriod">Next: Period #</id><br>
+                <id class="focusTimeNextStarts">Starts </id><id class="focusTimeNextStarts" id="genericFocusTimeNextStarts">#</id><br><br>
+            </div>
+        </div>
+    </div>
+    <div class="contains-bottom-bar">
+        <div class="navbar drop-shadow" id="partOfNavbar">
+            <a href="./"><img src="./img/house_1f3e0.png" width="32" class="hvr-grow house"></a>
+            <div class="vertline"></div>
+            <a href="./focused.html"><img src="./img/alarm-clock_23f0.png" width="32" class="nav-margin-right hvr-grow"></a>
+            <a href="./schedule.html"><img src="./img/spiral-calendar_1f5d3-fe0f.png" width="32" class="nav-margin-left hvr-grow"></a>
+        </div> <div class="profile drop-shadow" id="profileBtn">
+            <a href="./login.html"><img src="./img/bust-in-silhouette_1f464.png" width="32" class="hvr-grow"></a>
+        </div> <div class="stickies-toggle drop-shadow" id="stickyToggle">
+            <img id="stickiesToggle" src="./img/memo_1f4dd.png" width="32" class="hvr-grow" onclick="openNav()">
+        </div>
+    </div>
+    <script src="./js/stickies.js"></script>
+    <script src="./js/fetch.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyD778xRvFJZBP2eEAGnLHKwQQyf_-oNwwk",
+          authDomain: "timely-a1b72.firebaseapp.com",
+          projectId: "timely-a1b72",
+          storageBucket: "timely-a1b72.appspot.com",
+          messagingSenderId: "626457905012",
+          appId: "1:626457905012:web:d42adae902cb59e34fce21",
+          measurementId: "G-9ZJM3J02P9"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>

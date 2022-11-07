@@ -1,0 +1,128 @@
+{
+    "arrayName": "Timelytable Master",
+    "timeTables": [
+        {
+            "timeTableName": "Timelytable Neutral",
+            "timeTableValues" : [
+                    {
+                        "period": "School's Done!",
+                        "special": [{"homeroom": false},{"break": false}],
+                        "startTime": "00:00:00",
+                        "endTime": "07:45:00"
+                    },{
+                        "period": 1,
+                        "special": [{"homeroom": false},{"break": false}],
+                        "startTime": "07:45:00",
+                        "endTime": "08:35:00"
+                    },{
+                        "period": 2,
+                        "special": [{"homeroom": false},{"break": false}],
+                        "startTime": "08:38:00",
+                        "endTime": "09:28:00"
+                    },{
+                        "period": "Short Break",
+                        "special": [{"homeroom": false},{"break": true}],
+                        "startTime": "09:28:00",
+                        "endTime": "09:43:00" 
+                    },{
+                        "period": 3,
+                        "special": [{"homeroom": false},{"break": false}],
+                        "startTime": "09:43:00",
+                        "endTime": "10:33:00"
+                    },{
+                        "period": 4,
+                        "special": [{"homeroom": false},{"break": false}],
+                        "startTime": "10:36:00",
+                        "endTime": "11:26:00"
+                    },{
+                        "period": 5,
+                        "special": [{"homeroom": false},{"break": false}],
+                        "startTime": "11:29:00",
+                        "endTime": "12:19:00"
+                    },{
+                        "period": "MS Lunch / HS HR",
+                        "special": [{"homeroom": true},{"break": true}],
+                        "startTime": "12:19:00",
+                        "endTime": "12:44:00"
+                    },{
+                        "period": "HS Lunch / MS HR",
+                        "special": [{"homeroom": true},{"break": true}],
+                        "startTime": "12:44:00",
+                        "endTime": "13:09:00"
+                    },{
+                        "period": 6,
+                        "special": [{"homeroom": false},{"break": false}],
+                        "startTime": "13:09:00",
+                        "endTime": "13:59:00"
+                    },{
+                        "period": 7,
+                        "special": [{"homeroom": false},{"break": false}],
+                        "startTime": "14:02:00",
+                        "endTime": "14:52:00"
+                    },{
+                        "period": "School's Done!",
+                        "special": [{"homeroom": false},{"break": false}],
+                        "startTime": "14:52:00",
+                        "endTime": "23:59:59"
+                    }
+            ],
+            "version": 1
+        },{
+            "timeTableName": "Timelytable Neutral ERT",
+            "timeTableValues" : [
+                    {
+                        "period": 1,
+                        "special": [{"homeroom": false},{"break": false}],
+                        "startTime": "07:45:00",
+                        "endTime": "08:24:00"
+                    },{
+                        "period": 2,
+                        "special": [{"homeroom": false},{"break": false}],
+                        "startTime": "08:26:00",
+                        "endTime": "09:05:00"
+                    },{
+                        "period": "Short Break",
+                        "special": [{"homeroom": false},{"break": true}],
+                        "startTime": "09:05:00",
+                        "endTime": "09:22:00" 
+                    },{
+                        "period": 3,
+                        "special": [{"homeroom": false},{"break": false}],
+                        "startTime": "09:22:00",
+                        "endTime": "10:01:00"
+                    },{
+                        "period": 4,
+                        "special": [{"homeroom": false},{"break": false}],
+                        "startTime": "10:03:00",
+                        "endTime": "10:42:00"
+                    },{
+                        "period": 5,
+                        "special": [{"homeroom": false},{"break": false}],
+                        "startTime": "10:44:00",
+                        "endTime": "11:23:00"
+                    },{
+                        "period": "MS Lunch / HS HR",
+                        "special": [{"homeroom": true},{"break": true}],
+                        "startTime": "11:23:00",
+                        "endTime": "11:43:00"
+                    },{
+                        "period": "HS Lunch / MS HR",
+                        "special": [{"homeroom": true},{"break": true}],
+                        "startTime": "11:43:00",
+                        "endTime": "12:03:00"
+                    },{
+                        "period": 6,
+                        "special": [{"homeroom": false},{"break": false}],
+                        "startTime": "12:03:00",
+                        "endTime": "12:42:00"
+                    },{
+                        "period": 7,
+                        "special": [{"homeroom": false},{"break": false}],
+                        "startTime": "12:45:00",
+                        "endTime": "13:26:00"
+                    }
+            ],
+            "version": 1
+        }
+    ]
+}

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+.stickiesTitle {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.stickiesSave {
+    margin: 0;
+    position: absolute;
+    bottom: 7%;
+    left: 34%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.stickiesSave button {
+    background-color: rgba(255, 255, 255, 0.776);
+    color: #d98685;
+    padding: 14px 50px;
+    margin: 8px 0;
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+desc {
+    font-size: 14px;
+    color: #eedddd;
+    font-weight: 500;
+    position: relative;
+    top:-15px;
+}
+
+textarea {
+    left: 12%;
+    text-align: start;
+    position: relative;
+    background: rgba(255, 255, 255, 0.776) !important;
+    width: 75% !important;
+    height: 63% !important;
+    padding: 12px 20px !important;
+    margin: 8px 0 !important;
+    display: inline-block !important;
+    border: 0px solid #ccc !important;
+    box-sizing: border-box !important;
+    border-radius: 5px !important;
+    resize: none;
+}
+
+textarea {
+    font-family: "Inter", sans-serif !important;
+}
+
+textarea:focus {
+    outline: none !important;
+}
+
+/* The sidebar menu */
+.sidebar {
+    font-family: "Inter", sans-serif;
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1001; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: rgb(227, 141, 141); /* pinkish*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.2s;
+  }
+
+  .sidebar a:hover {
+    transform: scale(1.1)
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 42px;
+    margin-left: 30px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
