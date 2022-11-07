@@ -102,6 +102,8 @@ async function genericFocusedTime() {
                     var dtnx = new Date(dt0.getFullYear(), dt0.getMonth(), dt0.getDate(), parseInt(n_s[0]), parseInt(n_s[1]), parseInt(n_s[2]))
                 } catch (e) {
                     document.getElementById('focusTimeNext').style.display = "none";
+                    document.getElementById('genericFocusTimePeriod').innerHTML = "Now: Nothing";
+                    document.getElementById('genericFocusTimeEnds').innerHTML = "at any time...";
                 }
 
                 var dtnx_12 = dtnx.toLocaleString("default")
