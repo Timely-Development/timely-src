@@ -55,6 +55,7 @@ textarea {
 }
 
 textarea {
+    white-space: nowrap;
     font-family: "Inter", sans-serif !important;
 }
 
@@ -64,6 +65,7 @@ textarea:focus {
 
 /* The sidebar menu */
 .sidebar {
+    white-space: nowrap;
     font-family: "Inter", sans-serif;
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
@@ -71,7 +73,7 @@ textarea:focus {
     z-index: 1001; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: rgb(227, 141, 141); /* pinkish*/
+    background-color: #e38d8d; /* pinkish*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */

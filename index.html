@@ -4,8 +4,8 @@
     <meta name="theme-color" content="#e38d8d">
     <meta name="og:title" content="Timely">
     <meta name="og:image" content="https://svloogz.xyz/media/alarm-clock_23f0.png">
-    <meta name="og:description" content="Timely, the scheduling and time manager.">
-    
+    <meta name="og:description" content="Timely, the IPS scheduling and time manager.">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -65,36 +65,14 @@
             <div class="vertline"></div>
             <a href="./focused.html"><img src="./img/alarm-clock_23f0.png" width="32" class="nav-margin-right hvr-grow"></a>
             <a href="./schedule.html"><img src="./img/spiral-calendar_1f5d3-fe0f.png" width="32" class="nav-margin-left hvr-grow"></a>
+        </div> <div class="stickies-toggle drop-shadow" id="stickyToggle">
+            <a href="javascript:void()"><img id="stickiesToggle" src="./img/memo_1f4dd.png" width="32" class="hvr-grow nav-margin-right" onclick="toggleNav()"></a>
+            <img id="settingsButton" src="./img/gear_2699-fe0f.png" width="32" class="hvr-grow nav-margin-left">
         </div> <div class="profile drop-shadow" id="profileBtn">
             <a href="./login.html"><img src="./img/bust-in-silhouette_1f464.png" width="32" class="hvr-grow"></a>
-        </div> <div class="stickies-toggle drop-shadow" id="stickyToggle">
-            <img id="stickiesToggle" src="./img/memo_1f4dd.png" width="32" class="hvr-grow" onclick="openNav()">
         </div>
     </div>
     <script src="./js/stickies.js"></script>
     <script src="./js/fetch.js"></script>
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-          apiKey: "AIzaSyD778xRvFJZBP2eEAGnLHKwQQyf_-oNwwk",
-          authDomain: "timely-a1b72.firebaseapp.com",
-          projectId: "timely-a1b72",
-          storageBucket: "timely-a1b72.appspot.com",
-          messagingSenderId: "626457905012",
-          appId: "1:626457905012:web:d42adae902cb59e34fce21",
-          measurementId: "G-9ZJM3J02P9"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-      </script>
 </body>
 </html>
